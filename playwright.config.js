@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test';
+export default defineConfig({testDir:'./tests',use:{baseURL:'http://127.0.0.1:4321/sportcoachingfre/'},webServer:{command:'node node_modules/astro/bin/astro.mjs dev --host 127.0.0.1',url:'http://127.0.0.1:4321/sportcoachingfre/',reuseExistingServer:!process.env.CI},projects:[{name:'desktop',use:{browserName:'chromium',viewport:{width:1440,height:1000}}},{name:'mobile',use:{browserName:'chromium',viewport:{width:390,height:844},isMobile:true}}]});

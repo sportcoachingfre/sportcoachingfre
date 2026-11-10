@@ -32,4 +32,9 @@ De projectinstellingen staan in `.codex/config.toml`; uitleg en beperkingen in `
 
 ## Projectspecifieke aanvullingen
 
-Na `$setup`: vul hier de gekozen bouwstenen en geverifieerde commando's om te ontwikkelen, testen en bouwen aan. Bedenk geen commando's voordat het framework is gekozen en aangemaakt. Zet hier geen lijst van wat getest moet worden.
+- Website: Astro, met de tokens uit `design-system/` en eigen sportgerichte onderdelen. Geen schoollogo's of AI-inhoud.
+- Ontwikkelen: `npm run dev`.
+- Bouwen: `npm run build`.
+- Browsercontroles: `npm test`. Installeer vooraf de browser met `npx playwright install chromium`.
+- Publicatie: GitHub Pages via `.github/workflows/site.yml`; publiceert na geslaagde controles op `main`.
+- Formulier: FormSubmit, met `PUBLIC_FORM_ENDPOINT` als GitHub Actions-secret. Zie `docs/WEBSITE.md` voor activatie en beheer.
